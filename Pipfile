@@ -13,6 +13,7 @@ adafruit-circuitpython-bme280 = "*"
 [dev-packages]
 pylint = "*"
 pytest = "*"
+pipenv-setup = "*"
 
 [requires]
 python_version = "3.7"
