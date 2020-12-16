@@ -20,7 +20,8 @@ from snraspi.sensors import EnvironmentSensor
 ...
 #
 # Activate line according to configured environment
-# For DHT11 and DHT22, specify the 1-wire pin in board notation PINnn
+# For BME280 at SPI bus, specify the chip select pin in BOARD notation
+# For DHT11 and DHT22, specify the 1-wire pin in BOARD notation PINnn
 # The pin selection, specified below, is the one used in the tests in ./tests/sensors
 #
 sensor = EnvironmentSensor.EnvironmentSensorBME280_I2C()
