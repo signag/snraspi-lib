@@ -3,7 +3,9 @@
 Module EnvironmentSensors encapsulates access to different physical sensors into a class which allows common access to sensor data from Raspberry Pi, independently from the device type.
 
 The module uses different [Adafruit](https://www.adafruit.com/) CircuitPython libraries for device access.
+
 See <https://circuitpython.org/>.
+
 For CircuitPython on Raspberry Pi, see <https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi>
 
 The following sensors are currently supported:
