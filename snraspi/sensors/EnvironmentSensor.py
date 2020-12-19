@@ -38,6 +38,13 @@ import logging_plus
 logger = logging_plus.getLogger(__name__)
 logger.addHandler(logging.NullHandler())
 
+# Supported Sensor Types
+type_BME280_I2C="BME280_I2C"
+type_BME280_SPI = "BME280_SPI"
+type_DHT11 = "DHT11"
+type_DHT22 = "DHT22"
+sensorTypes = {type_BME280_I2C, type_BME280_SPI, type_DHT11, type_DHT22}
+
 class EnvironmentSensorError(Exception):
     """
     Base exception class for this module
