@@ -43,7 +43,7 @@ setup(
     # For a discussion on single-sourcing the version across setup.py and the
     # project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version="1.0.2",  # Required
+    version="1.0.3",  # Required
     # This is a one-line description or tagline of what your project does. This
     # corresponds to the "Summary" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#summary
@@ -127,17 +127,20 @@ setup(
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
-        "adafruit-blinka==5.9.1",
-        "adafruit-circuitpython-bme280==2.5.1",
-        "adafruit-circuitpython-busdevice==5.0.1",
-        "adafruit-circuitpython-dht==3.5.1",
-        "adafruit-platformdetect==2.23.0; python_version >= '3.5'",
-        "adafruit-pureio==1.1.8; python_version >= '3.5'",
-        "logging-plus==1.0.0",
-        "pyftdi==0.52.0; python_version >= '3.5'",
+        "adafruit-blinka==8.16.1",
+        "adafruit-circuitpython-bme280==2.6.19",
+        "adafruit-circuitpython-busdevice==5.2.3",
+        "adafruit-circuitpython-dht==3.7.8",
+        "adafruit-circuitpython-requests==1.13.0",
+        "adafruit-circuitpython-typing==1.8.3",
+        "adafruit-platformdetect==3.41.0; python_version >= '3.5'",
+        "adafruit-pureio==1.1.10; python_full_version >= '3.5.0'",
+        "logging-plus==1.1.0",
+        "pyftdi==0.54.0; python_version >= '3.7'",
         "pyserial==3.5",
-        "pyusb==1.1.0",
-        "rpi.gpio==0.7.0",
+        "pyusb==1.2.1; python_full_version >= '3.6.0'",
+        "rpi.gpio==0.7.1",
+        "typing-extensions==4.5.0; python_version >= '3.7'",
     ],  # Optional
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"
@@ -185,7 +188,5 @@ setup(
     # issues, where the source is hosted, where to say thanks to the package
     # maintainers, and where to support the project financially. The key is
     # what's used to render the link text on PyPI.
-    project_urls={  # Optional
-        "Source": "https://github.com/signag/snraspi-lib/",
-    },
+    project_urls={"Source": "https://github.com/signag/snraspi-lib/",},  # Optional
 )
