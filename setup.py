@@ -43,7 +43,7 @@ setup(
     # For a discussion on single-sourcing the version across setup.py and the
     # project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version="1.0.5",  # Required
+    version="1.0.6",  # Required
     # This is a one-line description or tagline of what your project does. This
     # corresponds to the "Summary" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#summary
@@ -119,7 +119,7 @@ setup(
     # and refuse to install the project if the version does not match. If you
     # do not support Python 2, you can simplify this to '>=3.5' or similar, see
     # https://packaging.python.org/guides/distributing-packages-using-setuptools/#python-requires
-    python_requires=">=3.6",
+    python_requires=">=3.7",
     # This field lists other packages that your project depends on to run.
     # Any package you put here will be installed by pip when your project is
     # installed, so they must be valid existing projects.
@@ -127,21 +127,29 @@ setup(
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
-        "adafruit-blinka==8.16.1",
-        "adafruit-circuitpython-bme280==2.6.19",
-        "adafruit-circuitpython-busdevice==5.2.3",
-        "adafruit-circuitpython-dht==3.7.8",
-        "adafruit-circuitpython-requests==1.13.0",
-        "adafruit-circuitpython-typing==1.8.3",
-        "adafruit-platformdetect==3.41.0; python_version >= '3.5'",
-        "adafruit-pureio==1.1.10; python_full_version >= '3.5.0'",
-        "logging-plus==1.1.0",
-        "pyftdi==0.54.0; python_version >= '3.7'",
-        "pyserial==3.5",
-        "pyusb==1.2.1; python_full_version >= '3.6.0'",
-        "rpi.gpio==0.7.1",
-        "typing-extensions==4.5.0; python_version >= '3.7'",
-    ],  # Optional
+        'adafruit-blinka==8.20.1', 
+        'adafruit-circuitpython-bme280==2.6.22', 
+        'adafruit-circuitpython-busdevice==5.2.6', 
+        'adafruit-circuitpython-dht==4.0.2', 
+        'adafruit-circuitpython-requests==2.0.1', 
+        'adafruit-circuitpython-typing==1.9.4', 
+        'adafruit-platformdetect==3.50.0', 
+        "adafruit-pureio==1.1.11; python_full_version >= '3.5.0'", 
+        "certifi==2023.7.22; python_version >= '3.6'", 
+        'distlib==0.3.7', 
+        "filelock==3.12.2; python_version >= '3.7'", 
+        "importlib-metadata==6.7.0; python_version < '3.8'", 
+        'logging-plus==1.1.2', 
+        "platformdirs==3.10.0; python_version >= '3.7'", 
+        "pyftdi==0.54.0; python_version >= '3.7'", 
+        'pyserial==3.5', 
+        "pyusb==1.2.1; python_full_version >= '3.6.0'", 
+        'rpi.gpio==0.7.1', 
+        "setuptools==68.0.0; python_version >= '3.7'", 
+        "typing-extensions==4.7.1; python_version >= '3.7'", 
+        "virtualenv==20.24.4; python_version >= '3.7'", 
+        "zipp==3.15.0; python_version >= '3.7'"
+        ],  # Optional
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"
     # syntax, for example:
